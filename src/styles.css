@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  width: 320px;
+  min-height: 400px;
+  background: rgb(0, 0, 0);
+}
+
+.wrapper {
+  width: 98%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.display {
+  font-family: "Barlow", sans-serif;
+  color: rgb(15, 14, 15);
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.formulaScreen,
+.outputScreen {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: none;
+  font-family: "Barlow" sans-serif;
+  font-size: 20px;
+}
+
+.btn-wrapper {
+  height: 346px;
+  background-color: indigo;
+  display: grid;
+  grid-template-areas:
+    "clear clear divide times"
+    "seven eight nine minus"
+    "four five six add"
+    "one two three equal"
+    "nothing nothing period equal";
+  gap: 1px;
+}
+
+.btn-wrapper > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid #000;
+}
+
+.btn-wrapper > div:hover {
+  font-size: transform(scale(2));
+  background-color: rgb(130, 148, 148);
+}
+
+.clear {
+  font-weight: bold;
+  grid-area: clear;
+  background-color: rgb(172, 57, 57);
+}
+
+.division {
+  grid-area: divide;
+  background-color: rgb(102, 102, 102);
+}
+.times {
+  grid-area: times;
+  background-color: rgb(102, 102, 102);
+}
+.minus {
+  background-color: rgb(102, 102, 102);
+}
+.add {
+  background-color: rgb(102, 102, 102);
+}
+.equal {
+  grid-area: equal;
+  background-color: rgb(5, 13, 94);
+}
+.seven {
+  grid-area: seven;
+  background-color: rgb(71, 69, 69);
+}
+.eight {
+  grid-area: eight;
+  background-color: rgb(71, 69, 69);
+}
+.nine {
+  grid-area: nine;
+  background-color: rgb(71, 69, 69);
+}
+.four {
+  grid-area: four;
+  background-color: rgb(71, 69, 69);
+}
+.five {
+  grid-area: five;
+  background-color: rgb(71, 69, 69);
+}
+.six {
+  grid-area: six;
+  background-color: rgb(71, 69, 69);
+}
+.one {
+  grid-area: one;
+  background-color: rgb(71, 69, 69);
+}
+.two {
+  grid-area: two;
+  background-color: rgb(71, 69, 69);
+}
+.three {
+  grid-area: three;
+  background-color: rgb(71, 69, 69);
+}
+.period {
+  grid-area: period;
+  background-color: rgb(71, 69, 69);
+}
+.zero {
+  grid-area: nothing;
+  background-color: rgb(71, 69, 69);
+}
